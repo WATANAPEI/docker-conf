@@ -10,7 +10,7 @@ docker-compose -f ../proxy/docker-compose.yml down
 
 # define volume and network
 # if exists, just skip
-docker volume rm out
+docker volume rm public
 
 docker network rm mynet
 
