@@ -15,6 +15,8 @@ docker-compose -f ../lang/docker-compose.yml up -d --build
 docker-compose -f ../proxy/docker-compose.yml up -d --build
 # start p-build service
 docker-compose -f ../p-drum/docker-compose.yml up -d --build
+# wait to prevent from memory error
+sleep 60
 # start lang-frontend service
 docker-compose -f ../lang-frontend/docker-compose.yml up -d --build
 
