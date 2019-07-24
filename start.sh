@@ -20,3 +20,5 @@ sleep 60
 # start lang-frontend service
 docker-compose -f ../lang-frontend/docker-compose.yml up -d --build
 
+#check CA expiry
+sh ./le_update.sh
